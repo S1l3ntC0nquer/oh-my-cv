@@ -1,0 +1,1 @@
+{"version":3,"file":"i18n.config-BQ9_Q3rr.js","sources":["../../../../i18n.config.ts?hash=bffaebcb&config=1"],"sourcesContent":["export default defineI18nConfig(() => ({\r\n  legacy: false,\r\n  locale: \"en\"\r\n}));\r\n"],"names":[],"mappings":"AAAA,MAAA;EACE,QAAQ;AAAA,EACR,QAAQ;AACV;"}
