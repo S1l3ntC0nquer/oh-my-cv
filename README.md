@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 494addb (Update README.md)
 # Oh My CV!
 
 Microsoft Word and LaTeX are too overkill for a resume.
