@@ -41,26 +41,36 @@ export default defineNuxtConfig({
   },
 
   app: {
+    baseURL: '/oh-my-cv/', // Ensure the app is aware of the subpath
     head: {
       viewport: "width=device-width,initial-scale=1",
       link: [
-        { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
-        { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#222" }
+        { rel: "apple-touch-icon", href: "/oh-my-cv/apple-touch-icon.png" },  // Updated path for GitHub Pages
+        { rel: "mask-icon", href: "/oh-my-cv/safari-pinned-tab.svg", color: "#222" }  // Updated path for GitHub Pages
       ],
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { name: "application-name", content: "Oh My CV!" },
         { name: "apple-mobile-web-app-title", content: "Oh My CV!" },
         { name: "msapplication-TileColor", content: "#fff" },
-        { property: "og:url", content: "https://ohmycv.app" },
+        { property: "og:url", content: "https://S1l3ntC0nquer.github.io/oh-my-cv/" },  // Corrected to use the GitHub Pages URL
         { property: "og:type", content: "website" }
       ]
     }
   },
 
   site: {
-    url: "https://ohmycv.app"
+    url: "https://S1l3ntC0nquer.github.io/oh-my-cv/"  // Corrected to use the GitHub Pages URL
   },
 
-  pwa
+  pwa: {
+    ...pwa,  // Ensure pwa settings are used here
+    manifest: {
+      ...pwa.manifest,
+      start_url: "/oh-my-cv/",  // Updated to use the GitHub Pages subpath
+    },
+    workbox: {
+      navigateFallback: "/oh-my-cv/index.html",  // Updated to use the GitHub Pages subpath
+    },
+  }
 });
