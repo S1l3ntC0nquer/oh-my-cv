@@ -56,7 +56,7 @@ pnpm build
 This app currently supports:
 
 - English
-- Simplified Chinese
+- Simplified Gujarati
 - Spanish ([@fmpaci](https://github.com/fmpaci))
 
 To add a new language, create a translation file `[language-code].yaml` in the [site/src/i18n](../site/src/i18n) folder. You can refer to the [English version file](../site/src/i18n/en.yaml) as a guide. Finally, add the language code, name, icon, and translation file name in [site/configs/i18n.ts](../site/configs/i18n.ts).
