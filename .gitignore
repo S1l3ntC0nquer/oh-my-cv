@@ -6,14 +6,14 @@
 # .cache
 # dist
 
-# Node dependencies
+Node dependencies
 node_modules
 
 # Logs
 logs
 *.log
 
-# Misc
+Misc
 .DS_Store
 .idea
 .vscode
